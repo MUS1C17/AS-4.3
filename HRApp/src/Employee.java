@@ -2,10 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Employee {
+    
+    //Properties of Employee
     private String name;
     private String lastName;
     private List<Job> jobHistory;
 
+    //Employee constractor
     public Employee(String name, String lastName) 
     {
         this.name = name;
@@ -13,11 +16,13 @@ public class Employee {
         this.jobHistory = new ArrayList<>();
     }
 
+    //Add job to the employee
     public void addJob(Job job) 
     {
         jobHistory.add(job);
     }
 
+    //Method to display Employee's job history
     public void displayJobHistory() 
     {
         System.out.println("Job History for " + name + lastName +":\n");
@@ -30,6 +35,7 @@ public class Employee {
         }
     }
 
+    //Method to Calculate total work experience in Years for the employee
     public long calculateTotalWorkExperienceInYears() 
     {
         long totalYears = 0;
@@ -40,6 +46,7 @@ public class Employee {
         return totalYears;
     }
 
+    //Method Calculates Job Satisfaction for the employee
     public String calculateAverageJobSatisfaction() 
     {
         double totalScore = 0;

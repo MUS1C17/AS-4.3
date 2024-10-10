@@ -1,5 +1,7 @@
 
 public class ContractJob extends Job{
+
+    //properties of the Contract Job
     private double hourlyRate;
     private int totalHours;
     private double bonus;
@@ -7,6 +9,7 @@ public class ContractJob extends Job{
     private int contractDurationMonths;
     private boolean isStable;
 
+    //Contract Job constructor
     public ContractJob(String companyName, String position, int startDate, int endDate, double hourlyRate, int totalHours, double bonus, double penalty, int contractDurationMonths, boolean isStable) 
     {
         super(companyName, position, startDate, endDate);
