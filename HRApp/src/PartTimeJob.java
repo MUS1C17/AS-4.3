@@ -5,6 +5,7 @@ public class PartTimeJob extends Job{
     private double hourlyWage;
     private int hoursPerWeek;
 
+    //Part Time Job Constructor
     public PartTimeJob(String companyName, String position, int startDate, int endDate, double hourlyWage, int hoursPerWeek) 
     {
         super(companyName, position, startDate, endDate);
